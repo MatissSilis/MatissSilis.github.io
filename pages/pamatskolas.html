@@ -1,0 +1,578 @@
+<!doctype html>
+
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+
+  <title>Praktiskais darbs nr.3</title>
+  <meta name="description" content="DatZ5172: Vietņu izstrādes principi. Praktiskais darbs nr.3">
+  <meta name="author" content="Matīss Sīlis">
+
+  <link rel="stylesheet" href="../materialize/css/materialize.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+<!-- Augšas navigācija -->
+	<ul id="dropdown1" style="min-width:200px;" class="dropdown-content">
+	  <li><a href="pirmsskolas.html">Pirmsskolas</a></li>
+	  <li><a href="pamatskolas.html">Pamatskolas</a></li>
+	  <li><a href="vidusskolas.html">Vidusskolas</a></li>
+	  <li><a href="gimnazijas.html">Ģimnāzijas</a></li>
+	  <li><a href="tehnikumi.html">Tehnikumi</a></li>
+	  <li><a href="sporta-skolas.html">Sporta skolas</a></li>
+	</ul>
+	<ul id="dropdown2" style="min-width:200px;" class="dropdown-content">
+	  <li><a href="kapitalsabiedribas.html">Kapitālsabiedrības</a></li>
+	  <li><a href="kulturas-iestades.html">Kultūras iestādes</a></li>
+	  <li><a href="pasvaldibas-policija.html">Pašvaldības policija</a></li>
+	  <li><a href="valsts-kontole.html">Valsts kontrole</a></li>
+	</ul>
+	<div class="navbar-fixed">
+	 <nav>
+	  <div class="nav-wrapper light-blue darken-4">
+		<a href="../index.html" class="brand-logo left"><img class="responsive-img" src="../img/lu-ppmf-logo.png" height="52" width="162" style="margin-top:4px; margin-left:4px;"></a>
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li>
+				<a href="../index.html">
+				<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
+					<path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+				</svg>
+				Sākums</a>
+		  </li>
+		  <li>
+			<a class="dropdown-trigger" href="#!" data-target="dropdown1">Skolas
+				<svg width="1em" height="1.5em" viewBox="0 0 16 16" class="bi bi-caret-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M3.204 5L8 10.481 12.796 5H3.204zm-.753.659l4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+				</svg>
+			</a>
+		  </li>
+		  <li>
+			<a class="dropdown-trigger" href="#!" data-target="dropdown2">Iestādes
+				<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M3.204 5L8 10.481 12.796 5H3.204zm-.753.659l4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+				</svg>
+			</a>
+		  </li>
+		  <li><a href="pasvaldibas.html">Pašvaldības</a></li>
+		</ul>
+	  </div>
+	</nav>
+   </div>
+   
+<!-- Sānu navigācija -->
+ <ul id="slide-out" class="sidenav">
+    <li><a href="pasvaldibas-policija.html">Pašvaldības policija</a></li>
+    <li><a href="tehnikumi.html">Tehnikumi</a></li>
+    <li><a href="vidusskolas.html">Vidusskolas</a></li>
+    <li><a href="pamatskolas.html">Pamatskolas</a></li>
+	<li><a href="valsts-kontrole.html">Valsts kontrole</a></li>
+    <li><a href="kapitalsabiedribas.html">Kapitālsabiedrības</a></li>
+	<li><a href="sporta-skolas.html">Sporta skolas</a></li>
+    <li><a href="pasvaldibas.html">Pašvaldības</a></li>
+	<li><a href="pirmsskolas.html">Pirmsskolas</a></li>
+	<li><a href="kulturas-iestades.html">Kultūras iestādes</a></li>
+	<li><a href="gimnazijas.html">Ģimnāzijas</a></li>
+  </ul>
+  
+<!-- Sānu navigācijas izvēlne -->  
+  <div class="fixed-action-btn">
+	<a href="#" data-target="slide-out" class="sidenav-trigger btn-floating waves-effect waves-light light-blue darken-4 btn">
+	  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+	  </svg>
+	</a>
+  </div>
+  
+<!--Lapas saturs-->
+  <div class="row">
+    <div id="div1" class="col s12">
+		<h4>Pamatskolas</h4>
+				<table class="responsive-table striped highchart" data-graph-container-before="1" data-graph-type="column" style="display:none" data-graph-height="200" data-graph-datalabels-enabled="1">
+					<caption>MK noteikumu izpilde (% no kopējā)</caption>
+					<thead>
+						<tr>
+							<th>Iestāde</th>
+							<th>Kopā %</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong><a href="#">1</a></strong></td>
+							<td><strong>0</strong></td>
+						</tr>
+						<tr>
+							<td><strong><a href="#">2</a></strong></td>
+							<td><strong>0</strong></td>
+						</tr>
+						<tr>
+							<td><strong><a href="#">3</a></strong></td>
+							<td><strong>0</strong></td>
+						</tr>
+						<tr>
+							<td><strong><a href="#">4</a></strong></td>
+							<td><strong>0</strong></td>
+						</tr>
+						<tr>
+							<td><strong><a href="#">5</a></strong></td>
+							<td><strong>0</strong></td>
+						</tr>
+						<tr>
+							<td><strong><a href="#">6</a></strong></td>
+							<td><strong>0</strong></td>
+						</tr>
+						<tr>
+							<td><strong><a href="#">7</a></strong></td>
+							<td><strong>0</strong></td>
+						</tr>
+						<tr>
+							<td><strong><a href="#">8</a></strong></td>
+							<td><strong>0</strong></td>
+						</tr>
+						<tr>
+							<td><strong><a href="#">9</a></strong></td>
+							<td><strong>0</strong></td>
+						</tr>
+						<tr>
+							<td><strong><a href="#">10</a></strong></td>
+							<td><strong>0</strong></td>
+						</tr>
+					</tbody>
+				</table>
+		<ul class="collapsible">
+		  <li>
+			<div  class="collapsible-header">
+			  <span>
+				<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-table" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+				</svg>
+				Tabula
+			  </span>
+			</div>
+			<div class="collapsible-body">
+				<table class="responsive-table striped">
+					<thead>
+						<tr>
+							<th>Nr.</th>
+							<th>Iestāde</th>
+							<th>Kopā %</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Par mums">20.1</a></th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Normatīvie akti">1.1</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Iestādes struktūra">1.2</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Darbības pārskati">1.3</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Kontakti">20.2</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Kontaktinformācija">2.1</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Amatpersonu saraksts">2.2</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Atrašanās vieta">2.3</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Aktualitātes">20.3</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Darbības joma">20.4</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Darbības virziens, mērķi, uzdevumi">4.1</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Stratēģiskie dokumenti">4.2</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Starptautiskā sadarbība">4.3</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="ES sabiedriskā līdzdalība">4.4</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Starptaustikās sadarbības normatīvie akti">4.5</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Pakalpojumi">20.5</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Sniegtie pakalpojumi">5.1</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Klientu centri">5.2</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Publikācijas un pārskati">20.6</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Sabiedrības līdzdalība">20.7</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Attīstības plānošanas dokumenti">7.1</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Sadarbības partneri">7.2</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Konsultatīvās institūcijas">7.3</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Budžets">20.8</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Pieņemšanas kārtība, termiņi">8.1</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Darbinieku darba samaksa">8.2</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Īpašumi">20.9</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Nomātie īpašumi">9.1</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Iznomātie īpašumi">9.2</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Nevajadzīgā kustamā manta">9.3</th>
+							<th><a class="btn tooltipped btn-flat" data-position="top" data-tooltip="Viegli lasīt">20.10</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1.</td>
+							<td><strong><a href="#"></a></strong></td>
+							<td><strong></strong></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>2.</td>
+							<td><strong><a href="#"></a></strong></td>
+							<td><strong></strong></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>3.</td>
+							<td><strong><a href="#"></a></strong></td>
+							<td><strong></strong></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>4.</td>
+							<td><strong><a href="#"></a></strong></td>
+							<td><strong></strong></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>5.</td>
+							<td><strong><a href="#"></a></strong></td>
+							<td><strong></strong></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>6.</td>
+							<td><strong><a href="#"></a></strong></td>
+							<td><strong></strong></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>7.</td>
+							<td><strong><a href="#"></a></strong></td>
+							<td><strong></strong></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>8.</td>
+							<td><strong><a href="#"></a></strong></td>
+							<td><strong></strong></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>9.</td>
+							<td><strong><a href="#"></a></strong></td>
+							<td><strong></strong></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>10.</td>
+							<td><strong><a href="#"></a></strong></td>
+							<td><strong></strong></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		  </li>
+		</ul>
+	</div>
+    
+	<script src="../materialize/js/jquery.min.js"></script>
+	<script src="../materialize/js/jquery-ui.min.js"></script>
+	<script src="../materialize/js/materialize.js"></script>
+	<script src="../chart/highcharts.js"></script>
+	<script src="../chart/jquery.highchartTable.js"></script>
+  <script>
+	  $(document).ready(function(){
+		$(".dropdown-trigger").dropdown();
+		$('.sidenav').sidenav();
+		$('.fixed-action-btn').floatingActionButton();
+		$('.tooltipped').tooltip();
+		$('.collapsible').collapsible();
+		$('table.highchart').highchartTable();
+	  });
+  </script>
+</body>
+</html>

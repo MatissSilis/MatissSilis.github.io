@@ -1,0 +1,24 @@
+.btn:hover, .btn-large:hover, .btn-small:hover {
+	background-color: #01579b;
+	color: white;
+  }
+
+.btn, btn-flat {
+	padding: 0 4px;
+  }
+  
+.dropdown-content li > a, .dropdown-content li > span {
+	color: #01579b;
+  }
+  
+th {
+	padding: 5px;
+  }
+  
+h3, p {
+	margin-left: 1.52rem;
+  }
+  
+h4 {
+	margin-left: 1rem;
+  }

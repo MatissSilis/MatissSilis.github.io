@@ -1,0 +1,288 @@
+<!doctype html>
+
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+
+  <title>Praktiskais darbs nr.3</title>
+  <meta name="description" content="DatZ5172: Vietņu izstrādes principi. Praktiskais darbs nr.3">
+  <meta name="author" content="Matīss Sīlis">
+
+  <link rel="stylesheet" href="materialize/css/materialize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+<!-- Augšas navigācija -->
+	<ul id="dropdown1" style="min-width:200px;" class="dropdown-content">
+	  <li><a href="pages/pirmsskolas.html">Pirmsskolas</a></li>
+	  <li><a href="pages/pamatskolas.html">Pamatskolas</a></li>
+	  <li><a href="pages/vidusskolas.html">Vidusskolas</a></li>
+	  <li><a href="pages/gimnazijas.html">Ģimnāzijas</a></li>
+	  <li><a href="pages/tehnikumi.html">Tehnikumi</a></li>
+	  <li><a href="pages/sporta-skolas.html">Sporta skolas</a></li>
+	</ul>
+	<ul id="dropdown2" style="min-width:200px;" class="dropdown-content">
+	  <li><a href="pages/kapitalsabiedribas.html">Kapitālsabiedrības</a></li>
+	  <li><a href="pages/kulturas-iestades.html">Kultūras iestādes</a></li>
+	  <li><a href="pages/pasvaldibas-policija.html">Pašvaldības policija</a></li>
+	  <li><a href="pages/valsts-kontole.html">Valsts kontrole</a></li>
+	</ul>
+	<div class="navbar-fixed">
+	 <nav>
+	  <div class="nav-wrapper light-blue darken-4">
+		<a href="index.html" class="brand-logo left"><img class="responsive-img" src="img/lu-ppmf-logo.png" height="52" width="162" style="margin-top:4px; margin-left:4px;"></a>
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li>
+				<a href="index.html">
+				<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
+					<path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+				</svg>
+				Sākums</a>
+		  </li>
+		  <li>
+			<a class="dropdown-trigger" href="#!" data-target="dropdown1">Skolas
+				<svg width="1em" height="1.5em" viewBox="0 0 16 16" class="bi bi-caret-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M3.204 5L8 10.481 12.796 5H3.204zm-.753.659l4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+				</svg>
+			</a>
+		  </li>
+		  <li>
+			<a class="dropdown-trigger" href="#!" data-target="dropdown2">Iestādes
+				<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M3.204 5L8 10.481 12.796 5H3.204zm-.753.659l4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+				</svg>
+			</a>
+		  </li>
+		  <li><a href="pages/pasvaldibas.html">Pašvaldības</a></li>
+		</ul>
+	  </div>
+	</nav>
+   </div>
+   
+<!-- Sānu navigācija -->
+ <ul id="slide-out" class="sidenav">
+    <li><a href="pages/pasvaldibas-policija.html">Pašvaldības policija</a></li>
+    <li><a href="pages/tehnikumi.html">Tehnikumi</a></li>
+    <li><a href="pages/vidusskolas.html">Vidusskolas</a></li>
+    <li><a href="pages/pamatskolas.html">Pamatskolas</a></li>
+	<li><a href="pages/valsts-kontrole.html">Valsts kontrole</a></li>
+    <li><a href="pages/kapitalsabiedribas.html">Kapitālsabiedrības</a></li>
+	<li><a href="pages/sporta-skolas.html">Sporta skolas</a></li>
+    <li><a href="pages/pasvaldibas.html">Pašvaldības</a></li>
+	<li><a href="pages/pirmsskolas.html">Pirmsskolas</a></li>
+	<li><a href="pages/kulturas-iestades.html">Kultūras iestādes</a></li>
+	<li><a href="pages/gimnazijas.html">Ģimnāzijas</a></li>
+  </ul>
+  
+<!-- Sānu navigācijas izvēlne -->  
+  <div class="fixed-action-btn">
+	<a href="#" data-target="slide-out" class="sidenav-trigger btn-floating waves-effect waves-light light-blue darken-4 btn">
+	  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+	  </svg>
+	</a>
+  </div>
+  
+<!--Lapas saturs-->
+  <div class="row">
+	<div id="intro">
+		<h3>Interneta vietņu analīze</h3>
+		<p>Šajā lapā apkopota informācija par publisko personu mājaslapu saturu atbilstoši Ministru kabineta 2020. gada 14. jūlija noteikumiem Nr. 445 "<a href="https://likumi.lv/ta/id/316109-kartiba-kada-iestades-ievieto-informaciju-interneta">Kārtība, kādā iestādes ievieto informāciju internetā</a>".</p>
+		<p>Informācija apkopota laika periodā no 2020. gada 1. oktobra līdz 15. oktobrim.</p>
+	</div>
+  </div>
+  
+  <div class="row">
+    <div class="col s12 m2">
+      <div class="card small light-blue darken-4">
+        <div class="card-content white-text">
+          <span class="card-title">Pašvaldības policija</span>
+          <p>Aplūkojot pašvaldības un novadu policijas vietnes tika atklāts, ka tikai retam policijas iecirknim ir izveidota no pilsētas vai novada nošķirta vietne. Lielākoties pilsētas vietnēs var atrast vienas lapas aprakstus par iecirkņa adresi, darba laikiem un citu amatinformāciju. Veicot meklēšanu internetā tika atklātas tikai 5 policijas vietnes, kuras pieder Auces, Daugavpils, Liepājas, Rīgas un Talsu policijas iecirkņiem. Vislabāk izstrādātā vietne bija Liepājas policijas iecirknim. Lielākoties informācija lapās ir ļoti minimāla un neatbilst iestāžu oficiālās tīmekļvietnes struktūrai un saturam.  </p>
+        </div>
+        <div class="card-action">
+          <a href="pages/pasvaldibas-policija.html">
+		  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+			<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+		  </svg>		  
+		  Pašvaldības policija</a>
+        </div>
+      </div>
+	</div>
+	<div class="col s12 m2">
+	  <div class="card small light-blue darken-4">
+        <div class="card-content white-text">
+          <span class="card-title">Tehnikumi</span>
+          <p>Šajā attēlā var aplūkot kā tehnikumu mājas lapas atbilst Ministru kabineta noteikumiem Nr. 445 "Kārtība, kādā iestādes ievieto informāciju internetā". Šeit redzams, ka visatbilstošākā mājas lapa šiem noteikumiem ir Daugavpils tehnikumam, šī tehnikuma mājas lapā ir attēlota lielākā daļa prasītās informācijas. Daudzu tehnikumu mājas lapās ir attēlota nepieciešamā informācija taču tā vai nu atrodas citā sadaļā vai sadaļa ir neatbilstoši nosaukta, kā arī informācija mēdz būt nepilnīga. Visprecīzāk skolas bija norādījušas informāciju sadaļās "Par mums", "Kontakti" un "Publikācijas un pārskati". Neviens tehnikums nebija atspoguļojis sadaļu "Īpašumi", kā arī tikai daži bija  atspoguļojuši sadaļas "Budžets" un "Viegli lasīt".</p>
+        </div>
+        <div class="card-action">
+          <a href="pages/tehnikumi.html">
+		  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+			<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+		  </svg>		  
+		  Tehnikumi</a>
+        </div>
+      </div>
+	</div>
+	<div class="col s12 m2">
+	  <div class="card small light-blue darken-4">
+        <div class="card-content white-text">
+          <span class="card-title">Vidusskolas</span>
+          <p>Daigrammā analizētas 10 vidusskolas, kur attēloti 10 galvenie lielie krietēriji pēc kā tika vērtētas. Rezdam, ka rezultāti nav labi. Kopumā vislabāk - pusei no analizētajām vidusskolu mājas lapām bija sadaļa "Kontakti". Daļai vidusskolu vietņu lapā bija sadaļa "Par mums" vai "Par skolu" un 2 skolām sadaļa "Aktualitātes". Pārējie kritēriji netika izpidlīti.</p>
+        </div>
+        <div class="card-action">
+          <a href="pages/vidusskolas.html">
+		  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+			<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+		  </svg>		  
+		  Vidusskolas</a>
+        </div>
+      </div>
+	</div>
+	<div class="col s12 m2">
+	  <div class="card small light-blue darken-4">
+        <div class="card-content white-text">
+          <span class="card-title">Pamatskolas</span>
+          <p>Pašlaik pamatskolas nav sekojošas līdzi Ministru kabineta noteikumi Nr. 445 “Kārtība, kādā iestādes ievieto informāciju internetā”. Visām mājas lapām nav izveidotas lapas, kartes, kas palīdzētu vieglāk lasīt informāciju un atrast nepieciešamo. Bieži vien sadaļu nosaukumi ir sinonīmi likuma sadaļu nosaukumiem.
+		  Kopvērtējumā 1. vietu ieguva "Rīgas Pļavnieku pamatskola", kura atbilda visvairāk likuma noteiktajiem punktiem.
+		  Lai apskatītu detalizētāku statistiku par pamatskolām lejupielādēt šeit.</p>
+        </div>
+        <div class="card-action">
+          <a href="pages/pamatskolas.html">
+		  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+			<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+		  </svg>		  
+		  Pamatskolas</a>
+        </div>
+      </div>
+	</div>
+	<div class="col s12 m2">
+	  <div class="card small light-blue darken-4">
+        <div class="card-content white-text">
+          <span class="card-title">Valsts kontrole</span>
+          <p></p>
+        </div>
+        <div class="card-action">
+          <a href="pages/valsts-kontrole.html">
+		  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+			<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+		  </svg>		  
+		  Valsts kontrole</a>
+        </div>
+      </div>
+	</div>
+	<div class="col s12 m2">
+	  <div class="card small light-blue darken-4">
+        <div class="card-content white-text">
+          <span class="card-title">Kapitālsabiedrības</span>
+          <p>Visas aplūkotās valsts un pašvaldības kapitālsabiedrības iestādes ir sekojušas līdzi Ministru kabineta noteikumiem Nr.445 "Kārtība kādā iestādes ievieto informāciju internetā". Tīmekļvietnēs ir norādīta un viegli atrodama nepieciešamā informācija, izņemot “Sadarbība ar ES” un “Nekustamo īpašumu” sadaļas, kuras uz atsevišķām iestādēm neattiecas.</p>
+        </div>
+        <div class="card-action">
+          <a href="pages/kapitalsabiedribas.html">
+		  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+			<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+		  </svg>		  
+		  Kapitālsabiedrības</a>
+        </div>
+      </div>
+	</div>
+	<div class="col s12 m2">
+	  <div class="card small light-blue darken-4">
+        <div class="card-content white-text">
+          <span class="card-title">Sporta skolas</span>
+          <p>Latvijas sporta skolu tīmekļvietnes tika analizētas, balstoties uz MK noteikumiem MK noteikumiem Nr. 445 "Kārtība, kādā iestādes ievieto informāciju internetā". Izpētes rezultātā var secināt, ka sporta skolu tīmekļvietņu struktūra tikai daļēji atbilst MK noteikumiem. Tīmekļvietnēs nebija vienotas struktūras un viena un 
+tā paša rakstu informācija atrodas dažādās sadaļās, piemēram, informācija par darbības virzienu un mērķiem bija atrodama titullapā, sadaļā “Par mums” un sadaļā “Skolas vēsture”. Šis aspekts apgrūtināja kvalitātīvu mājaslapu izvērtējumu.
+Vispozitīvāk ir novērtējamas sekojošu sporta skolu tīmekļvietnes – Rīgas Volejbola skola un Rīgas bērnu jaunatnes sporta skola “Rīdzene”. Savukārt pašlaik zemāko vērtējumu ieguva Rīgas Šaha skolas un Rīgas Vingrošanas skolas tīmekļvietnes. Kā arī, tika konstatēts, ka Krišjāņa Kundziņa Cīņas sporta skolai vispār 
+nav izveidota tīmekļvietne, kaut arī skola ir minēta Rīgas Izglītības, kultūras un sporta departamenta publicētajā sporta iestāžu sarakstā. Sadaļas, kuras gandrīz nav atrodamas dotajās tīmekļvietnēs ir: “Īpašumi”, “Publikācijas un pārskati”, “Budžets”.
+</p>
+        </div>
+        <div class="card-action">
+          <a href="pages/sporta-skolas.html">
+		  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+			<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+		  </svg>		  
+		  Sporta skolas</a>
+        </div>
+      </div>
+	</div>
+	<div class="col s12 m2">
+	  <div class="card small light-blue darken-4">
+        <div class="card-content white-text">
+          <span class="card-title">Pirmsskolas</span>
+          <p></p>
+        </div>
+        <div class="card-action">
+          <a href="pages/pirmsskolas.html">
+		  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+			<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+		  </svg>		  
+		  Pirmsskolas</a>
+        </div>
+      </div>
+	</div>
+	<div class="col s12 m2">
+	  <div class="card small light-blue darken-4">
+        <div class="card-content white-text">
+          <span class="card-title">Kultūras iestādes</span>
+          <p>Kultūras iestāžu mājaslapās tiek izpildīts mazāk nekā 30% no MK Noteikumos paredzētajām prasībām (sk. grafikā).
+
+Mājaslapās nav pieejama informācija par institūcijas darbības jomu, virzienu un uzdevumiem. Netiek izpildītas prasības par budžeta un darbinieku darba samaksas atspoguļošanu. Nevienā no mājaslapām nav sadaļu "Viegli lasīt", "Sabiedrības līdzdalība", "Publikācijas un pārskati" (sk. tabulu).
+
+Lielākajā daļā mājaslapās ir pieejami institūciju apraksti un kontaktinformācija, kā arī sniegtie pakalpojumi. Tā kā liela daļa kultūras institūciju sniedz telpu nomas pakalpojumu, ir pieejama informācija par iznomājamajām telpām (MK noteikumu 20.9.2. punkts).</p>
+        </div>
+        <div class="card-action">
+          <a href="pages/kulturas-iestades.html">
+		  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+			<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+		  </svg>		  
+		  Kultūras iestādes</a>
+        </div>
+      </div>
+	</div>
+	<div class="col s12 m2">
+	  <div class="card small light-blue darken-4">
+        <div class="card-content white-text">
+          <span class="card-title">Ģimnāzijas</span>
+          <p>Visām aplūkotajām ģimnāzijām bija sadaļa - par mums, kontaktinformācija, dokumenti, atrašanās vieta, aktualitātes. Pāris skolu lapās ir vadības saraksts, bet nav visu skolotāju vai arī ievietota skolotāju fotogrāfija. Sadarbība ar ES ir grūti interpretēt, jo iespējams visām skolām šādu sadarbību nav vai arī neatrodas viegli atrodamā vietā. Budžetu, nekustamos īpašumus - neanalizēju, jo nesapratu kādā kontekstā tas ir domāts un šādu informāciju neatradu skolu lapās.</p>
+        </div>
+        <div class="card-action">
+          <a href="pages/gimnazijas.html">
+		  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+			<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+		  </svg>
+		  Ģimnāzijas</a>
+        </div>
+      </div>
+	</div>
+
+  </div>
+
+	<script src="materialize/js/jquery.min.js"></script>
+	<script src="materialize/js/jquery-ui.min.js"></script>
+	<script src="materialize/js/materialize.js"></script>
+	<script src="chart/highcharts.js"></script>
+	<script src="chart/jquery.highchartTable.js"></script>
+  <script>
+	  $(document).ready(function(){
+		$(".dropdown-trigger").dropdown();
+		$('.sidenav').sidenav();
+		$('.fixed-action-btn').floatingActionButton();
+		$('.tooltipped').tooltip();
+		$('.collapsible').collapsible();
+		$('table.highchart').highchartTable();
+	  });
+  </script>
+</body>
+</html>
